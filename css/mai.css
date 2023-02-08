@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+body{
+    /* width: 101%;
+    background-color: #8f9121; */
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    /* position: relative; */
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8%;
+    width: 80%;
+    margin: auto;
+    background-color: #0d3740f3;
+}
+/* .logo{
+    width: 40px;
+} */
+ .logo{
+    width: 40px;
+    transition: 0.5s;
+    /* علشان اقلل الوقت اللي هعيمل فيه هوفر */
+    cursor: pointer;
+}
+ .logo:hover{
+    transform: scale(1.8);
+    /* علشان يكبر الصوره  */}
+:root {
+    --MAIN-COLOR: #10cab7;
+  }
+  .container .linkes {
+    position: relative;
+  }
+  .container .linkes:hover .icon span:nth-of-type(2) {
+    width: 100%;
+  }
+  .container .linkes .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* علشان العناضر تنزل تحت */
+    justify-content: flex-end;
+  }
+  .container .linkes .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 3px;
+  }
+  .container .linkes .icon span:first-child {
+    width: 100%;
+  }
+  .container .linkes .icon span:nth-of-type(2) {
+    transition: 0.3s;
+    width: 60%;
+  }
+  .container .linkes .icon span:last-child {
+    width: 100%;
+  }
+  .container .linkes ul {
+    display: none;
+    top: calc(100% + 7px);
+    min-width: 200px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #ddd;
+    right: 0;
+    z-index: 1;
+  }
+  .container .linkes:hover ul {
+    display: block;
+  }
+  .container .linkes ul::before {
+    content: "";
+    position: absolute;
+    border-color: #ff000000 #aaaaff00 rgb(47, 4, 4) #00800000;
+    border-style: solid;
+    border-width: 10px;
+    content: "";
+    right: 5px;
+    top: -20px;
+  }
+  
+  .container .linkes ul li a {
+    text-decoration-line: blink;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  .container .linkes ul li a:hover {
+    padding-left: 25px;
+  }
+  .container .linkes ul li:not(:last-child) a {
+    border-bottom: 1px solid black;
+  }
+ 
+  .definition{
+    background: antiquewhite;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;   
+  }
+  .laptob{
+    /* margin-left: 371px; */
+    width: 40%; 
+ }
+.laptobo{
+    margin-left: 80px;
+    width: 100%;
+  }
+  .text{
+    width: 40%;
+  }
+  .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  .text p{
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  .customer{
+    height: 64%;
+    width: 94%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto 0px auto;
+  }
+  .rating{
+    cursor: pointer;
+    height: 65%;
+    align-items: center;
+    display: flex;
+    border: 1px red solid;
+    width: 43%;
+        flex-direction: row-reverse;
+    border-radius: 20px;
+    /* background-color: rgb(34, 31, 31); */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    transition: 0.5s;
+    background-image: url(../image/pexels-towfiqu-barbhuiya-9821386.jpg);
+    background-size: cover;
+  }
+  .rating:hover{
+    transform: scale(1.1);
+    /* علشان يكبر الصوره  */
+}
+  .brands{
+    cursor: pointer;
+    height: 65%;
+    align-items: center;
+    display: flex;
+    border: 1px red solid;
+    width: 43%;
+        flex-direction: row-reverse;
+    border-radius: 20px;
+    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    transition: 0.5s;
+  }
+  .brands:hover{
+    transform: scale(1.1);
+    /* علشان يكبر الصوره  */
+}
+
+  .image2{
+    width: 40px;
+  }
+  .image3{
+    display: flex;
+  }
+  .image4 {
+    margin: auto;
+    width: 73%;
+    border-radius: 20px;
+  }
+  .content{
+    min-height: 1242px;
+    width: 100%;
+    /* height: 51%; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+  }
+  .pm{
+    /* background-size: 1317.78px 878.3px; */
+    height: 100%;
+    width: 50%;
+    background-image: url(../image/pexels-alex-knight-mmll.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
+    background-size: 1317.78px 878.3px;
+    background-color: transparent;
+    background-position: -399.49px 12.95px;
+    background-image: url(https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&h=1500&w=2000&fit=clip&fm=jpg);
+    background-attachment: fixed; */
+}
+  
+  .temp{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 47% 50%;
+    grid-template-rows: 651px 1px 0px 0px;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    justify-items: center;
+    height: 100%;
+    background: black;
+    color: aliceblue;
+  }
